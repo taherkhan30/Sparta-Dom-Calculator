@@ -33,7 +33,7 @@ var updateDisplayVal = (clickObj) => {
 
     displayVal += btnText;
     displayValElement.innerText = displayVal;
-  
+
 }
 
 for (var i = 0; i < calcNum.length; i++) {
@@ -42,3 +42,11 @@ for (var i = 0; i < calcNum.length; i++) {
 // for (var i = 0; i < operator.length; i++) {
 //   operators[i].addEventListener('click', performOperation, false)
 // }
+
+
+clearBtn.onclick =() => {
+  displayVal= '0';
+  pendingVal = undefined;
+  evalStringArray =[];
+  displayValElement.innerHTML = displayVal;
+}
